@@ -1,0 +1,32 @@
+{
+  "flags": [
+    {
+      "name": "new_checkout",
+      "enabled": true,
+      "description": "New checkout experience",
+      "envs": ["dev", "prod"],
+      "rollout": {
+        "type": "percentage",
+        "percentage": 25
+      }
+    },
+    {
+      "name": "dark_mode",
+      "enabled": true,
+      "description": "Dark mode UI",
+      "envs": ["dev"],
+      "rollout": {
+        "type": "all"
+      }
+    },
+    {
+      "name": "experimental_search",
+      "enabled": false,
+      "description": "Experimental search ranking",
+      "envs": ["dev", "prod"],
+      "rollout": {
+        "type": "none"
+      }
+    }
+  ]
+}
