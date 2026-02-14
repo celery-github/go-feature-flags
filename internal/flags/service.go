@@ -26,7 +26,6 @@ func (s *Service) Put(flag Flag) (Flag, error) {
 	if flag.Name == "" {
 		return Flag{}, fmt.Errorf("name is required")
 	}
-	// sensible defaults
 	if flag.Rollout.Type == "" {
 		flag.Rollout.Type = RolloutAll
 	}
