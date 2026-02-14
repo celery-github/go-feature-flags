@@ -10,3 +10,5 @@ A lightweight feature-flag service in Go (mini LaunchDarkly-style) with:
 ## Run
 ```bash
 go run ./cmd/server -addr :8080 -seed ./configs/flags.json
+
+📘 Full API documentation: see [API.md](./API.md)
